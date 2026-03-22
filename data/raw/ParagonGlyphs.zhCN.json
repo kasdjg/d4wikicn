@@ -1,0 +1,550 @@
+[
+  {
+    "IdName": "Rare_001_Intelligence_Main",
+    "Name": "附魔"
+  },
+  {
+    "IdName": "Rare_002_Intelligence_Main",
+    "Name": "释放"
+  },
+  {
+    "IdName": "Rare_003_Intelligence_Main",
+    "Name": "元素使"
+  },
+  {
+    "IdName": "Rare_004_Intelligence_Main",
+    "Name": "娴熟"
+  },
+  {
+    "IdName": "Rare_005_Intelligence_Main",
+    "Name": "咒术师"
+  },
+  {
+    "IdName": "Rare_006_Intelligence_Main",
+    "Name": "带电"
+  },
+  {
+    "IdName": "Rare_007_Willpower_Side",
+    "Name": "火炬"
+  },
+  {
+    "IdName": "Rare_008_Willpower_Side",
+    "Name": "纵火"
+  },
+  {
+    "IdName": "Rare_009_Willpower_Side",
+    "Name": "伤寒症"
+  },
+  {
+    "IdName": "Rare_010_Dexterity_Main",
+    "Name": "战术家"
+  },
+  {
+    "IdName": "Rare_011_Intelligence_Side",
+    "Name": "暴食者"
+  },
+  {
+    "IdName": "Rare_011_Willpower_Side",
+    "Name": "吸收者"
+  },
+  {
+    "IdName": "Rare_012_Intelligence_Side",
+    "Name": "保护者"
+  },
+  {
+    "IdName": "Rare_012_Willpower_Side",
+    "Name": "加固"
+  },
+  {
+    "IdName": "Rare_013_Dexterity_Side",
+    "Name": "镇静"
+  },
+  {
+    "IdName": "Rare_014_Dexterity_Side",
+    "Name": "领地"
+  },
+  {
+    "IdName": "Rare_014_Strength_Main",
+    "Name": "驱逐"
+  },
+  {
+    "IdName": "Rare_014_Strength_Side",
+    "Name": "驱逐"
+  },
+  {
+    "IdName": "Rare_015_Dexterity_Side",
+    "Name": "火焰喂食者"
+  },
+  {
+    "IdName": "Rare_016_Dexterity_Side",
+    "Name": "利用"
+  },
+  {
+    "IdName": "Rare_016_Intelligence_Side",
+    "Name": "利用"
+  },
+  {
+    "IdName": "Rare_016_Strength_Side",
+    "Name": "利用"
+  },
+  {
+    "IdName": "Rare_017_Dexterity_Side",
+    "Name": "凛冬"
+  },
+  {
+    "IdName": "Rare_018_Dexterity_Side",
+    "Name": "电刑"
+  },
+  {
+    "IdName": "Rare_019_Dexterity_Side",
+    "Name": "破坏"
+  },
+  {
+    "IdName": "Rare_020_Dexterity_Side",
+    "Name": "控制"
+  },
+  {
+    "IdName": "Rare_020_Intelligence_Main",
+    "Name": "控制"
+  },
+  {
+    "IdName": "Rare_020_Intelligence_Side",
+    "Name": "控制"
+  },
+  {
+    "IdName": "Rare_021_Strength_Main",
+    "Name": "灵巧"
+  },
+  {
+    "IdName": "Rare_022_Strength_Main",
+    "Name": "勇力"
+  },
+  {
+    "IdName": "Rare_023_Strength_Main",
+    "Name": "削砍"
+  },
+  {
+    "IdName": "Rare_024_Strength_Main",
+    "Name": "恼怒"
+  },
+  {
+    "IdName": "Rare_025_Strength_Main",
+    "Name": "碾压者"
+  },
+  {
+    "IdName": "Rare_026_Strength_Main",
+    "Name": "处决者"
+  },
+  {
+    "IdName": "Rare_027_Strength_Main",
+    "Name": "怒火"
+  },
+  {
+    "IdName": "Rare_028_Strength_Main",
+    "Name": "统帅"
+  },
+  {
+    "IdName": "Rare_029_Dexterity_Side",
+    "Name": "鲜血喂食者"
+  },
+  {
+    "IdName": "Rare_030_Dexterity_Side",
+    "Name": "愤怒"
+  },
+  {
+    "IdName": "Rare_031_Dexterity_Side",
+    "Name": "武器大师"
+  },
+  {
+    "IdName": "Rare_032_Dexterity_Side",
+    "Name": "致命吸引"
+  },
+  {
+    "IdName": "Rare_033_Intelligence_Side",
+    "Name": "复仇"
+  },
+  {
+    "IdName": "Rare_033_Willpower_Side",
+    "Name": "复仇"
+  },
+  {
+    "IdName": "Rare_033_Willpower_Side_Necro",
+    "Name": "复仇"
+  },
+  {
+    "IdName": "Rare_034_Intelligence_Side",
+    "Name": "无惧"
+  },
+  {
+    "IdName": "Rare_034_Willpower_Side",
+    "Name": "无惧"
+  },
+  {
+    "IdName": "Rare_035_Intelligence_Side",
+    "Name": "支配"
+  },
+  {
+    "IdName": "Rare_035_Willpower_Side",
+    "Name": "支配"
+  },
+  {
+    "IdName": "Rare_035_Willpower_Side_Necro",
+    "Name": "支配"
+  },
+  {
+    "IdName": "Rare_036_Willpower_Side",
+    "Name": "开膛破肚"
+  },
+  {
+    "IdName": "Rare_037_Willpower_Side",
+    "Name": "搏斗"
+  },
+  {
+    "IdName": "Rare_038_Intelligence_Main",
+    "Name": "有形"
+  },
+  {
+    "IdName": "Rare_039_Willpower_Main",
+    "Name": "尖牙和利爪"
+  },
+  {
+    "IdName": "Rare_040_Willpower_Main",
+    "Name": "大地天空"
+  },
+  {
+    "IdName": "Rare_041_Intelligence_Side",
+    "Name": "狂野"
+  },
+  {
+    "IdName": "Rare_042_Willpower_Main",
+    "Name": "熊人"
+  },
+  {
+    "IdName": "Rare_043_Willpower_Main",
+    "Name": "狼人"
+  },
+  {
+    "IdName": "Rare_044_Willpower_Main",
+    "Name": "人类"
+  },
+  {
+    "IdName": "Rare_045_Intelligence_Side",
+    "Name": "灾星"
+  },
+  {
+    "IdName": "Rare_045_Strength_Side",
+    "Name": "灾星"
+  },
+  {
+    "IdName": "Rare_046_Dexterity_Side",
+    "Name": "深渊"
+  },
+  {
+    "IdName": "Rare_046_Intelligence_Side",
+    "Name": "守卫"
+  },
+  {
+    "IdName": "Rare_047_Dexterity_Side",
+    "Name": "爆雷"
+  },
+  {
+    "IdName": "Rare_047_Intelligence_Side",
+    "Name": "爆雷"
+  },
+  {
+    "IdName": "Rare_048_Dexterity_Side",
+    "Name": "追踪者"
+  },
+  {
+    "IdName": "Rare_048_Intelligence_Side",
+    "Name": "追踪者"
+  },
+  {
+    "IdName": "Rare_049_Dexterity_Side",
+    "Name": "凌驾"
+  },
+  {
+    "IdName": "Rare_049_Strength_Main",
+    "Name": "凌驾"
+  },
+  {
+    "IdName": "Rare_049_Strength_Side",
+    "Name": "凌驾"
+  },
+  {
+    "IdName": "Rare_050_Dexterity_Main",
+    "Name": "灵力"
+  },
+  {
+    "IdName": "Rare_050_Dexterity_Side",
+    "Name": "灵力"
+  },
+  {
+    "IdName": "Rare_050_Willpower_Side",
+    "Name": "灵力"
+  },
+  {
+    "IdName": "Rare_051_Dexterity_Side",
+    "Name": "变形者"
+  },
+  {
+    "IdName": "Rare_052_Dexterity_Main",
+    "Name": "随机应变"
+  },
+  {
+    "IdName": "Rare_053_Dexterity_Main",
+    "Name": "追击者"
+  },
+  {
+    "IdName": "Rare_054_Dexterity_Main",
+    "Name": "巡游侠"
+  },
+  {
+    "IdName": "Rare_055_Dexterity_Main",
+    "Name": "削凿"
+  },
+  {
+    "IdName": "Rare_055_Dexterity_Side",
+    "Name": "削凿"
+  },
+  {
+    "IdName": "Rare_055_Willpower_Side",
+    "Name": "削凿"
+  },
+  {
+    "IdName": "Rare_056_Dexterity_Main",
+    "Name": "寒霜喂食者"
+  },
+  {
+    "IdName": "Rare_057_Dexterity_Main",
+    "Name": "流体"
+  },
+  {
+    "IdName": "Rare_058_Intelligence_Side",
+    "Name": "灌魔"
+  },
+  {
+    "IdName": "Rare_059_Dexterity_Main",
+    "Name": "阴险"
+  },
+  {
+    "IdName": "Rare_060_Dexterity_Side",
+    "Name": "战士"
+  },
+  {
+    "IdName": "Rare_061_Intelligence_Side",
+    "Name": "战斗"
+  },
+  {
+    "IdName": "Rare_062_Dexterity_Side",
+    "Name": "守墓人"
+  },
+  {
+    "IdName": "Rare_063_Intelligence_Side",
+    "Name": "精明"
+  },
+  {
+    "IdName": "Rare_064_Intelligence_Side",
+    "Name": "效能"
+  },
+  {
+    "IdName": "Rare_065_Intelligence_Side",
+    "Name": "诱捕"
+  },
+  {
+    "IdName": "Rare_066_Dexterity_Side",
+    "Name": "精魂"
+  },
+  {
+    "IdName": "Rare_067_Strength_Side",
+    "Name": "骄纵"
+  },
+  {
+    "IdName": "Rare_068_Strength_Side",
+    "Name": "伏击"
+  },
+  {
+    "IdName": "Rare_069_Intelligence_Main",
+    "Name": "牺牲"
+  },
+  {
+    "IdName": "Rare_070_Intelligence_Main",
+    "Name": "饮血者"
+  },
+  {
+    "IdName": "Rare_071_Intelligence_Main",
+    "Name": "死尸复生者"
+  },
+  {
+    "IdName": "Rare_072_Intelligence_Main",
+    "Name": "法师"
+  },
+  {
+    "IdName": "Rare_073_Intelligence_Main",
+    "Name": "增幅"
+  },
+  {
+    "IdName": "Rare_074_Willpower_Side",
+    "Name": "傀儡"
+  },
+  {
+    "IdName": "Rare_075_Willpower_Side",
+    "Name": "煞星"
+  },
+  {
+    "IdName": "Rare_076_Strength_Main",
+    "Name": "削弱"
+  },
+  {
+    "IdName": "Rare_076_Strength_Side",
+    "Name": "削弱"
+  },
+  {
+    "IdName": "Rare_077_Willpower_Side",
+    "Name": "界护"
+  },
+  {
+    "IdName": "Rare_078_Willpower_Side",
+    "Name": "黑暗"
+  },
+  {
+    "IdName": "Rare_079_Dexterity_Side",
+    "Name": "利用"
+  },
+  {
+    "IdName": "Rare_080_Strength_Main",
+    "Name": "旋风"
+  },
+  {
+    "IdName": "Rare_081_Strength_Main",
+    "Name": "轰鸣"
+  },
+  {
+    "IdName": "Rare_082_Dexterity_Main",
+    "Name": "爆炸"
+  },
+  {
+    "IdName": "Rare_083_Intelligence_Side",
+    "Name": "夜行者"
+  },
+  {
+    "IdName": "Rare_084_Intelligence_Main",
+    "Name": "石笋"
+  },
+  {
+    "IdName": "Rare_085_Dexterity_Side",
+    "Name": "祈告"
+  },
+  {
+    "IdName": "Rare_086_Dexterity_Side",
+    "Name": "地动"
+  },
+  {
+    "IdName": "Rare_087_Willpower_Main",
+    "Name": "电刑"
+  },
+  {
+    "IdName": "Rare_088_Intelligence_Main",
+    "Name": "掘墓"
+  },
+  {
+    "IdName": "Rare_089_Willpower_Side",
+    "Name": "亵渎"
+  },
+  {
+    "IdName": "Rare_090_Dexterity_Main",
+    "Name": "御灵师"
+  },
+  {
+    "IdName": "Rare_091_Strength_Side",
+    "Name": "砥砺"
+  },
+  {
+    "IdName": "Rare_092_Intelligence_Side",
+    "Name": "腐化消解"
+  },
+  {
+    "IdName": "Rare_093_Dexterity_Main",
+    "Name": "健硕"
+  },
+  {
+    "IdName": "Rare_094_Intelligence_Side",
+    "Name": "仪祭"
+  },
+  {
+    "IdName": "Rare_095_Dexterity_Main",
+    "Name": "锐羽"
+  },
+  {
+    "IdName": "Rare_096_Strength_Side",
+    "Name": "天生神力"
+  },
+  {
+    "IdName": "Rare_097_Dexterity_Main",
+    "Name": "野火"
+  },
+  {
+    "IdName": "Rare_098_Strength_Side",
+    "Name": "猛力"
+  },
+  {
+    "IdName": "Rare_100_Dexterity_Main",
+    "Name": "掠爪"
+  },
+  {
+    "IdName": "Rare_101_Strength_Side",
+    "Name": "嚣狂"
+  },
+  {
+    "IdName": "Rare_102_Dexterity_Main",
+    "Name": "腐溃"
+  },
+  {
+    "IdName": "Rare_103_Strength_Main",
+    "Name": "守备"
+  },
+  {
+    "IdName": "Rare_104_Dexterity_Side",
+    "Name": "修磨"
+  },
+  {
+    "IdName": "Rare_105_Strength_Main",
+    "Name": "律法"
+  },
+  {
+    "IdName": "Rare_106_Willpower_Side",
+    "Name": "仲裁官"
+  },
+  {
+    "IdName": "Rare_107_Strength_Main",
+    "Name": "辉煌"
+  },
+  {
+    "IdName": "Rare_108_Intelligence_Side",
+    "Name": "审判者"
+  },
+  {
+    "IdName": "Rare_109_Dexterity_Side",
+    "Name": "热忱者"
+  },
+  {
+    "IdName": "Rare_110_Strength_Main",
+    "Name": "使徒"
+  },
+  {
+    "IdName": "Rare_Dex_Generic",
+    "Name": "猎头者"
+  },
+  {
+    "IdName": "Rare_Int_Generic",
+    "Name": "灭除者"
+  },
+  {
+    "IdName": "Rare_Str_Generic",
+    "Name": "挑战者"
+  },
+  {
+    "IdName": "Rare_Will_Generic",
+    "Name": "猎头者"
+  }
+]

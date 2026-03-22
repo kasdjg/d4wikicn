@@ -1,0 +1,602 @@
+{
+  "build_name": "S11 Golem",
+  "class_en": "Necromancer",
+  "class_cn": "死灵法师",
+  "profile_name": "Mythic",
+  "items": [
+    {
+      "slot": "头盔",
+      "item_id": "Helm_Unique_Generic_004",
+      "en_name": "Heir of Perdition",
+      "cn_name": "堕狱传承",
+      "is_unique": true,
+      "is_mythic": true,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [
+        {
+          "en": "+200% Damage to Angels and Demons",
+          "cn": "+200% 对天使和恶魔的伤害",
+          "nid": 2113445
+        }
+      ],
+      "explicits": [
+        {
+          "en": "+35% Critical Strike Chance",
+          "cn": "+35% 暴击几率",
+          "nid": 2113453,
+          "greater": true
+        },
+        {
+          "en": "+35% Lucky Hit Chance",
+          "cn": "+35% 幸运一击几率",
+          "nid": 2113457,
+          "greater": false
+        },
+        {
+          "en": "+25% Movement Speed",
+          "cn": "+25% 移动速度",
+          "nid": 2113455,
+          "greater": false
+        },
+        {
+          "en": "+2 to Core Skills",
+          "cn": "+2 至核心技能",
+          "nid": 2113449,
+          "greater": false
+        }
+      ],
+      "tempered": [],
+      "aspects": [],
+      "unique_effect_en": "Succumb to hatred and earn Mother's Favor, increasing your damage dealt by 60%. Slaughter enemies to briefly steal Mother's Favor from surrounding allies.",
+      "unique_effect_cn": "屈服于憎恨并获得圣母的宠爱，从而使你造成的伤害提高 60%。消灭敌人可以从附近盟友身上短暂窃取圣母的宠爱效果。",
+      "sockets": [
+        {
+          "raw": "Rune_Condition_AllSkillsOnCD",
+          "display": "[触发符文] 尤尔 (Yul) — 施放一个带有冷却时间的技能。"
+        },
+        {
+          "raw": "Rune_Effect_Druid_EarthenBulwark",
+          "display": "[效果符文] 奎 (Que) — 施放德鲁伊的大地壁垒技能，持续 # 秒，使你获得一层屏障。"
+        }
+      ]
+    },
+    {
+      "slot": "胸甲",
+      "item_id": "Chest_Unique_Generic_103",
+      "en_name": "Shroud of False Death",
+      "cn_name": "虚假死亡之衣",
+      "is_unique": true,
+      "is_mythic": true,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [
+        {
+          "en": "+1 to All Passives",
+          "cn": "+1 至所有被动技能",
+          "nid": 2105844
+        }
+      ],
+      "explicits": [
+        {
+          "en": "360 All Stats",
+          "cn": "360 点全属性",
+          "nid": 2113422,
+          "greater": true
+        },
+        {
+          "en": "+416.2% Damage on Next Attack After Entering Stealth",
+          "cn": "+416.2% 进入潜行状态后下一次攻击的伤害",
+          "nid": 2113424,
+          "greater": false
+        },
+        {
+          "en": "+999.9 Maximum Life",
+          "cn": "+999.9 生命上限",
+          "nid": 2113430,
+          "greater": false
+        },
+        {
+          "en": "13.9% Resource Generation",
+          "cn": "13.9% 资源生成",
+          "nid": 2113436,
+          "greater": false
+        }
+      ],
+      "tempered": [],
+      "aspects": [],
+      "unique_effect_en": "If you haven't dealt damage in the last 2 seconds, gain Stealth and 40% Movement Speed.",
+      "unique_effect_cn": "如果你在过去 2 秒内未造成伤害，便可进入潜行状态，同时使移动速度提高 40%。",
+      "sockets": [
+        {
+          "raw": "Rune_Condition_HitHealthierEnemy",
+          "display": "[触发符文] 阿胡 (Ahu) — 幸运一击：攻击非健康敌人时，最多有 100% 几率。"
+        },
+        {
+          "raw": "Rune_Effect_ResourceToDamage",
+          "display": "[效果符文] 卡克 (Qax) — 施放一个非基础且非防御的技能会消耗所有主要资源，使你的伤害在 1 秒内至多提高 #%。"
+        }
+      ]
+    },
+    {
+      "slot": "主手武器",
+      "item_id": "1HMace_Unique_Necro_100",
+      "en_name": "Gravebloom",
+      "cn_name": "墓绽",
+      "is_unique": true,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [
+        {
+          "en": "+10% Attack Speed",
+          "cn": "+10% 攻击速度",
+          "nid": 2065803
+        }
+      ],
+      "explicits": [
+        {
+          "en": "+112.5% Chance for Golem to Hit Twice",
+          "cn": "+112.5% 几率使傀儡击中两次",
+          "nid": 2471308,
+          "greater": true
+        },
+        {
+          "en": "+2 to Golem Mastery",
+          "cn": "+2 至傀儡精通",
+          "nid": 1928787,
+          "greater": false
+        },
+        {
+          "en": "+570.8 Maximum Life",
+          "cn": "+570.8 生命上限",
+          "nid": 1829592,
+          "greater": false
+        },
+        {
+          "en": "117.5 Intelligence",
+          "cn": "117.5 点智力",
+          "nid": 2060509,
+          "greater": false
+        }
+      ],
+      "tempered": [],
+      "aspects": [],
+      "unique_effect_en": "You raise 3 smaller Golems that each deal 60% of normal damage and gain 30% Attack Speed. \r\n\r\nGolems respawn 50% faster.",
+      "unique_effect_cn": "你召唤 3 个较小的傀儡，每个造成 60% 的普通伤害，并获得 30% 攻击速度。\r\n\r\n傀儡重生速度加快 50%。",
+      "sockets": [
+        {
+          "raw": "Gem_Emerald_06",
+          "display": "翡翠 (Emerald)"
+        }
+      ]
+    },
+    {
+      "slot": "副手",
+      "item_id": "1HFocus_Legendary_Generic_001",
+      "en_name": "Viper Downfall",
+      "cn_name": "邪能饕餮之副手",
+      "is_unique": false,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [
+        {
+          "en": "+10% Lucky Hit Chance",
+          "cn": "+10% 幸运一击几率",
+          "nid": 1234170
+        }
+      ],
+      "explicits": [
+        {
+          "en": "Lucky Hit: Up to a 15% Chance to Restore +22.5% Primary Resource",
+          "cn": "幸运一击: 最多有 15% 几率恢复 +22.5% 主要资源",
+          "nid": 2380415,
+          "greater": true
+        },
+        {
+          "en": "151.2 Intelligence",
+          "cn": "151.2 点智力",
+          "nid": 1829566,
+          "greater": false
+        },
+        {
+          "en": "+570.8 Maximum Life",
+          "cn": "+570.8 生命上限",
+          "nid": 1829592,
+          "greater": false
+        },
+        {
+          "en": "11% Cooldown Reduction",
+          "cn": "11% 冷却时间缩减",
+          "nid": 1829560,
+          "greater": false
+        }
+      ],
+      "tempered": [
+        {
+          "en": "+131.2% Golem Damage",
+          "cn": "+131.2% 傀儡伤害",
+          "nid": 1867493
+        }
+      ],
+      "aspects": [
+        {
+          "en_name": "of Fel Gluttony",
+          "cn_name": "邪能饕餮之",
+          "en_desc": "Your Golem Active also causes your Golem to erupt, dealing 4 Physical damage to surrounding enemies. \r\n\r\nYour Golem consumes Corpses to reduce its remaining Cooldown by 1 second and deals 40% increased damage.",
+          "cn_desc": "施放傀儡的主动技能还会使傀儡发生爆裂，对周围敌人造成 4 点物理伤害。\r\n\r\n你的傀儡可以吞噬亡骸，使其技能的剩余冷却时间缩短 1 秒，并且造成的伤害提高 40%。"
+        }
+      ],
+      "unique_effect_en": "",
+      "unique_effect_cn": "",
+      "sockets": [
+        {
+          "raw": "Gem_Emerald_06",
+          "display": "翡翠 (Emerald)"
+        }
+      ]
+    },
+    {
+      "slot": "手套",
+      "item_id": "Gloves_Legendary_Generic_053",
+      "en_name": "Loath Armament",
+      "cn_name": "控尸之手套",
+      "is_unique": false,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [],
+      "explicits": [
+        {
+          "en": "272.2 Intelligence",
+          "cn": "272.2 点智力",
+          "nid": 1829566,
+          "greater": true
+        },
+        {
+          "en": "+12.5% Attack Speed",
+          "cn": "+12.5% 攻击速度",
+          "nid": 1829556,
+          "greater": false
+        },
+        {
+          "en": "+570.8 Maximum Life",
+          "cn": "+570.8 生命上限",
+          "nid": 1829592,
+          "greater": false
+        },
+        {
+          "en": "+62.5% Critical Strike Damage",
+          "cn": "+62.5% 暴击伤害",
+          "nid": 1829586,
+          "greater": false
+        }
+      ],
+      "tempered": [
+        {
+          "en": "+131.2% Golem Damage",
+          "cn": "+131.2% 傀儡伤害",
+          "nid": 1867493
+        }
+      ],
+      "aspects": [
+        {
+          "en_name": "of Reanimation",
+          "cn_name": "控尸之",
+          "en_desc": "Your Minions gain increased damage while alive, up to 60% after 10 seconds.",
+          "cn_desc": "你的仆从在存活期间造成的伤害提高，10 秒后最高可达 60%。"
+        }
+      ],
+      "unique_effect_en": "",
+      "unique_effect_cn": "",
+      "sockets": []
+    },
+    {
+      "slot": "裤子",
+      "item_id": "Pants_Unique_Necro_100",
+      "en_name": "Blood Moon Breeches",
+      "cn_name": "血月马裤",
+      "is_unique": true,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [],
+      "explicits": [
+        {
+          "en": "+4 to Golem Mastery",
+          "cn": "+4 至傀儡精通",
+          "nid": 1928787,
+          "greater": true
+        },
+        {
+          "en": "+2 to Hellbent Commander",
+          "cn": "+2 至冷面指挥官",
+          "nid": 1092167,
+          "greater": false
+        },
+        {
+          "en": "+15.6% Critical Strike Chance",
+          "cn": "+15.6% 暴击几率",
+          "nid": 2113351,
+          "greater": false
+        },
+        {
+          "en": "+5 to Curse Skills",
+          "cn": "+5 至诅咒技能",
+          "nid": 2066886,
+          "greater": false
+        }
+      ],
+      "tempered": [],
+      "aspects": [],
+      "unique_effect_en": "Your Summons have a 7% chance to randomly inflict Decrepify or Iron Maiden when they deal damage.  \r\n\r\nYou deal 50% increased Critical Strike Damage to enemies affected by your Curses.",
+      "unique_effect_cn": "你的召唤物在造成伤害时，有 7% 几率随机对敌人施加衰老或铁处女效果。\r\n\r\n当敌人身上带有你的诅咒时，你对其造成的暴击伤害提高 50%。",
+      "sockets": [
+        {
+          "raw": "Gem_Topaz_06",
+          "display": "黄宝石 (Topaz)"
+        },
+        {
+          "raw": "Gem_Topaz_06",
+          "display": "黄宝石 (Topaz)"
+        }
+      ]
+    },
+    {
+      "slot": "鞋子",
+      "item_id": "Boots_Legendary_Generic_053",
+      "en_name": "Bloody Omen",
+      "cn_name": "诅咒光环之靴子",
+      "is_unique": false,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [
+        {
+          "en": "+3 Maximum Evade Charges",
+          "cn": "+3 最大闪避次数",
+          "nid": 1014495
+        }
+      ],
+      "explicits": [
+        {
+          "en": "272.2 Intelligence",
+          "cn": "272.2 点智力",
+          "nid": 1829566,
+          "greater": true
+        },
+        {
+          "en": "+570.8 Maximum Life",
+          "cn": "+570.8 生命上限",
+          "nid": 1829592,
+          "greater": false
+        },
+        {
+          "en": "+31.2% Movement Speed",
+          "cn": "+31.2% 移动速度",
+          "nid": 1829598,
+          "greater": false
+        },
+        {
+          "en": "+437 Armor",
+          "cn": "+437 护甲值",
+          "nid": 1829554,
+          "greater": false
+        }
+      ],
+      "tempered": [
+        {
+          "en": "+15.6% Movement Speed",
+          "cn": "+15.6% 移动速度",
+          "nid": 1862314
+        }
+      ],
+      "aspects": [
+        {
+          "en_name": "of the Cursed Aura",
+          "cn_name": "诅咒光环之",
+          "en_desc": "A dark aura surrounds you, inflicting Decrepify and Iron Maiden on enemies who touch it. \r\n\r\nCurses inflicted this way spread to surrounding targets every -0.5 seconds and last 4 seconds outside of the aura.",
+          "cn_desc": "一股黑暗气息笼罩在你周围，对接触到的敌人施加衰老和铁处女效果。\r\n\r\n以这种方式施加的诅咒每隔 -0.5 秒便会扩散至周围的目标，且在离开黑暗气息之后，还会持续 4 秒。"
+        }
+      ],
+      "unique_effect_en": "",
+      "unique_effect_cn": "",
+      "sockets": []
+    },
+    {
+      "slot": "项链",
+      "item_id": "Amulet_Legendary_Generic_001",
+      "en_name": "Odd Nexus",
+      "cn_name": "牺牲项链",
+      "is_unique": false,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [],
+      "explicits": [
+        {
+          "en": "+4 to Hellbent Commander",
+          "cn": "+4 至冷面指挥官",
+          "nid": 1928564,
+          "greater": true
+        },
+        {
+          "en": "+2 to Coalesced Blood",
+          "cn": "+2 至凝结之血",
+          "nid": 1928447,
+          "greater": false
+        },
+        {
+          "en": "+2 to Amplify Damage",
+          "cn": "+2 至伤害增效",
+          "nid": 1928441,
+          "greater": false
+        },
+        {
+          "en": "127.5 Intelligence",
+          "cn": "127.5 点智力",
+          "nid": 2481583,
+          "greater": false
+        }
+      ],
+      "tempered": [
+        {
+          "en": "31.2% Golem Active Cooldown Reduction",
+          "cn": "31.2% 傀儡激活冷却时间缩减",
+          "nid": 1867350
+        }
+      ],
+      "aspects": [
+        {
+          "en_name": "Sacrificial",
+          "cn_name": "牺牲",
+          "en_desc": "Your Sacrifice bonuses are increased by 82.5%.",
+          "cn_desc": "你的牺牲加成效果提高 82.5%。"
+        }
+      ],
+      "unique_effect_en": "",
+      "unique_effect_cn": "",
+      "sockets": [
+        {
+          "raw": "Gem_Diamond_06",
+          "display": "钻石 (Diamond)"
+        }
+      ]
+    },
+    {
+      "slot": "戒指1",
+      "item_id": "Ring_Legendary_Generic_027",
+      "en_name": "Brimstone Clash",
+      "cn_name": "群体盛宴之戒指",
+      "is_unique": false,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [],
+      "explicits": [
+        {
+          "en": "19.8% Cooldown Reduction",
+          "cn": "19.8% 冷却时间缩减",
+          "nid": 1829560,
+          "greater": true
+        },
+        {
+          "en": "+12.5% Attack Speed",
+          "cn": "+12.5% 攻击速度",
+          "nid": 1829556,
+          "greater": false
+        },
+        {
+          "en": "151.2 Intelligence",
+          "cn": "151.2 点智力",
+          "nid": 1829566,
+          "greater": false
+        },
+        {
+          "en": "+570.8 Maximum Life",
+          "cn": "+570.8 生命上限",
+          "nid": 1829592,
+          "greater": false
+        }
+      ],
+      "tempered": [
+        {
+          "en": "+131.2% Golem Damage",
+          "cn": "+131.2% 傀儡伤害",
+          "nid": 1867493
+        }
+      ],
+      "aspects": [
+        {
+          "en_name": "of the Great Feast",
+          "cn_name": "群体盛宴之",
+          "en_desc": "While you have active Minions, your Summons deal 55% increased damage, but each Minion Drains 2 Essence from you per second. \r\n\r\nWhile you have no active Minions, you deal 55% increased damage, but 14 Essence Drains per second.",
+          "cn_desc": "拥有激活的仆从时，你的召唤物造成的伤害提高 55%，但每个仆从都会使你每秒损失 2 点精魂。\r\n\r\n如果没有激活的仆从，则你的伤害提高 55%，且每秒损失 14 点精魂。"
+        }
+      ],
+      "unique_effect_en": "",
+      "unique_effect_cn": "",
+      "sockets": [
+        {
+          "raw": "Gem_Diamond_06",
+          "display": "钻石 (Diamond)"
+        }
+      ]
+    },
+    {
+      "slot": "戒指2",
+      "item_id": "Ring_Legendary_Generic_027",
+      "en_name": "Prism Blitz",
+      "cn_name": "血脉掌握之戒指",
+      "is_unique": false,
+      "is_mythic": false,
+      "power": 800,
+      "upgrade": 25,
+      "implicits": [],
+      "explicits": [
+        {
+          "en": "+17.5% Attack Speed",
+          "cn": "+17.5% 攻击速度",
+          "nid": 1829556,
+          "greater": true
+        },
+        {
+          "en": "151.2 Intelligence",
+          "cn": "151.2 点智力",
+          "nid": 1829566,
+          "greater": false
+        },
+        {
+          "en": "11% Cooldown Reduction",
+          "cn": "11% 冷却时间缩减",
+          "nid": 1829560,
+          "greater": false
+        },
+        {
+          "en": "Lucky Hit: Up to a +59.1% Chance to Make Enemies Vulnerable for 2 Seconds",
+          "cn": "幸运一击: 最多有 +59.1% 几率使敌人陷入易伤状态，持续 2 秒",
+          "nid": 1925700,
+          "greater": false
+        }
+      ],
+      "tempered": [
+        {
+          "en": "43.8% Golem Active Cooldown Reduction",
+          "cn": "43.8% 傀儡激活冷却时间缩减",
+          "nid": 1867350
+        }
+      ],
+      "aspects": [
+        {
+          "en_name": "of Grasping Veins",
+          "cn_name": "血脉掌握之",
+          "en_desc": "Gain 25% increased Critical Strike Chance for 6 seconds when you cast Corpse Tendrils. You deal 50% bonus Critical Strike Damage to enemies for 6 seconds after they are damaged by Corpse Tendrils.",
+          "cn_desc": "施放亡骸卷须时, 获得 25% 的暴击几率加成, 持续 6 秒。亡骸卷须对敌人造成伤害后，你在接下来的 6 秒内对其造成 50% 额外暴击伤害。"
+        },
+        {
+          "en_name": "Conceited",
+          "cn_name": "嚣狂",
+          "en_desc": "Deal 30% increased damage while you have a Barrier active.",
+          "cn_desc": "你有激活的屏障时, 你造成的伤害提高 30%。"
+        }
+      ],
+      "unique_effect_en": "",
+      "unique_effect_cn": "",
+      "sockets": [
+        {
+          "raw": "Gem_Diamond_06",
+          "display": "钻石 (Diamond)"
+        }
+      ]
+    }
+  ],
+  "all_profiles": [
+    "Starter",
+    "Ancestral",
+    "Mythic",
+    "Sanctification",
+    "Skills"
+  ],
+  "active_profile_index": 2
+}

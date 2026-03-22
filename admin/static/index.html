@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D4Wiki 管理后台</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-abyss: #0a0a0c;
+  --bg-stone: #111114;
+  --bg-slab: #18181d;
+  --bg-raised: #1f1f26;
+  --bg-hover: #26262f;
+  --border-dark: #2a2a35;
+  --border-dim: #333340;
+  --border-glow: #4a3a2a;
+  --text-primary: #d4cfc6;
+  --text-secondary: #8a8690;
+  --text-dim: #5a5660;
+  --ember: #c4642a;
+  --ember-bright: #e87a30;
+  --ember-glow: #ff943d;
+  --blood: #8b2020;
+  --blood-bright: #c43030;
+  --gold: #b89a5a;
+  --gold-bright: #d4b46a;
+  --gold-dim: #7a6a3a;
+  --rune-blue: #4a7ab5;
+  --rune-blue-bright: #5a90d0;
+  --success: #3a7a3a;
+  --success-bright: #4a9a4a;
+  --terminal-bg: #08080a;
+  --terminal-stdout: #a09a90;
+  --terminal-stderr: #c44040;
+  --terminal-system: #b89a5a;
+}
+
+html { font-size: 14px; }
+
+body {
+  background: var(--bg-abyss);
+  color: var(--text-primary);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Vignette */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0,0,0,0.4) 100%);
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* ═══ TOP NAV ═══ */
+.top-nav {
+  background: linear-gradient(180deg, #13131a 0%, #0e0e12 100%);
+  border-bottom: 1px solid var(--border-dark);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  position: relative;
+}
+
+.top-nav::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--ember) 30%, var(--gold-dim) 50%, var(--ember) 70%, transparent 100%);
+  opacity: 0.4;
+}
+
+.nav-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  text-shadow: 0 0 20px rgba(184, 154, 90, 0.2);
+  margin-right: 3rem;
+  white-space: nowrap;
+}
+
+.nav-title span {
+  color: var(--ember-bright);
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0;
+  height: 100%;
+}
+
+.nav-tab {
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 100%;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.nav-tab:hover:not(.disabled) {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.02);
+}
+
+.nav-tab.active {
+  color: var(--gold);
+  border-bottom-color: var(--ember);
+}
+
+.nav-tab.disabled {
+  color: var(--text-dim);
+  cursor: not-allowed;
+}
+
+.nav-tab.disabled::after {
+  content: '即将';
+  font-size: 0.65rem;
+  background: var(--bg-raised);
+  color: var(--text-dim);
+  padding: 1px 6px;
+  border-radius: 3px;
+  margin-left: 6px;
+  border: 1px solid var(--border-dark);
+}
+
+/* ═══ MAIN CONTENT ═══ */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+}
+
+/* ═══ ACTION BAR ═══ */
+.action-bar {
+  background: linear-gradient(135deg, var(--bg-slab) 0%, var(--bg-stone) 100%);
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.action-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.action-info-row {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.info-label {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.info-value {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.version-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.version-tag.up-to-date {
+  background: rgba(58, 122, 58, 0.15);
+  border: 1px solid rgba(58, 122, 58, 0.3);
+  color: var(--success-bright);
+}
+
+.version-tag.has-update {
+  background: rgba(196, 100, 42, 0.15);
+  border: 1px solid rgba(196, 100, 42, 0.3);
+  color: var(--ember-bright);
+}
+
+.version-tag.unknown {
+  background: rgba(90, 86, 96, 0.15);
+  border: 1px solid var(--border-dark);
+  color: var(--text-dim);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+/* ═══ BUTTONS ═══ */
+.btn {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-dim);
+  background: var(--bg-raised);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-color: var(--border-glow);
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--ember) 0%, #a85520 100%);
+  border-color: var(--ember-bright);
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--ember-bright) 0%, var(--ember) 100%);
+  border-color: var(--ember-glow);
+  box-shadow: 0 0 16px rgba(196, 100, 42, 0.25);
+}
+
+.btn-danger {
+  border-color: var(--blood);
+  color: var(--blood-bright);
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: rgba(139, 32, 32, 0.2);
+  border-color: var(--blood-bright);
+}
+
+.btn-sm {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.8rem;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  background: transparent;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: rgba(255,255,255,0.04);
+  border-color: var(--border-dark);
+}
+
+/* ═══ STEP CARDS ═══ */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.step-card {
+  background: var(--bg-slab);
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  padding: 1.2rem;
+  position: relative;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.step-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border-dark);
+  transition: all 0.3s;
+}
+
+.step-card:hover {
+  border-color: var(--border-dim);
+  background: var(--bg-raised);
+}
+
+/* Status-specific card styles */
+.step-card[data-status="running"]::before {
+  background: var(--rune-blue-bright);
+  box-shadow: 0 0 12px rgba(74, 122, 181, 0.5);
+  animation: pulseBar 1.5s ease-in-out infinite;
+}
+
+.step-card[data-status="success"]::before {
+  background: var(--success-bright);
+}
+
+.step-card[data-status="error"]::before {
+  background: var(--blood-bright);
+}
+
+@keyframes pulseBar {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.step-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.step-card[data-status="running"] .step-indicator {
+  background: var(--rune-blue-bright);
+  box-shadow: 0 0 8px var(--rune-blue);
+  animation: pulseOrb 1.5s ease-in-out infinite;
+}
+
+.step-card[data-status="success"] .step-indicator {
+  background: var(--success-bright);
+  box-shadow: 0 0 6px rgba(74, 154, 74, 0.3);
+}
+
+.step-card[data-status="error"] .step-indicator {
+  background: var(--blood-bright);
+  box-shadow: 0 0 6px rgba(196, 48, 48, 0.3);
+}
+
+@keyframes pulseOrb {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 1; }
+}
+
+.step-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.step-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.9rem;
+  min-height: 2.8rem;
+}
+
+.step-meta-item {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.step-meta-item span {
+  color: var(--text-secondary);
+}
+
+.step-card .btn {
+  width: 100%;
+}
+
+/* ═══ TERMINAL ═══ */
+.terminal-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gold-dim);
+  letter-spacing: 0.08em;
+}
+
+.terminal {
+  background: var(--terminal-bg);
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  height: 340px;
+  overflow-y: auto;
+  padding: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  position: relative;
+}
+
+.terminal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terminal::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.terminal::-webkit-scrollbar-thumb {
+  background: var(--border-dark);
+  border-radius: 3px;
+}
+
+.terminal::-webkit-scrollbar-thumb:hover {
+  background: var(--border-dim);
+}
+
+.log-line {
+  display: flex;
+  gap: 0.6rem;
+  padding: 1px 0;
+  animation: fadeIn 0.15s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.log-time {
+  color: var(--text-dim);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.log-step-tag {
+  color: var(--text-dim);
+  flex-shrink: 0;
+  min-width: 3rem;
+  user-select: none;
+}
+
+.log-text {
+  word-break: break-all;
+}
+
+.log-text.stdout { color: var(--terminal-stdout); }
+.log-text.stderr { color: var(--terminal-stderr); }
+.log-text.system { color: var(--terminal-system); font-weight: 500; }
+
+.terminal-empty {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* ═══ DATA STATS ═══ */
+.stats-table-wrap {
+  background: var(--bg-slab);
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stats-table th {
+  background: var(--bg-raised);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--border-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.stats-table td {
+  font-size: 0.82rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid rgba(42, 42, 53, 0.5);
+  color: var(--text-secondary);
+}
+
+.stats-table tr:last-child td {
+  border-bottom: none;
+}
+
+.stats-table tr:hover td {
+  background: rgba(255,255,255,0.015);
+}
+
+.stats-table .filename {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+}
+
+.stats-table .number {
+  font-family: 'JetBrains Mono', monospace;
+  text-align: right;
+}
+
+/* ═══ LOADING SPINNER ═══ */
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border-dim);
+  border-top-color: var(--ember);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ═══ TOAST / NOTIFICATION ═══ */
+.toast-container {
+  position: fixed;
+  top: 68px;
+  right: 1.5rem;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toast {
+  background: var(--bg-raised);
+  border: 1px solid var(--border-dim);
+  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  animation: slideIn 0.3s ease-out;
+  max-width: 360px;
+}
+
+.toast.error {
+  border-color: var(--blood);
+  background: rgba(139, 32, 32, 0.15);
+}
+
+.toast.success {
+  border-color: var(--success);
+  background: rgba(58, 122, 58, 0.15);
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ═══ DECORATIVE ═══ */
+.rune-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--border-dark) 20%, var(--gold-dim) 50%, var(--border-dark) 80%, transparent 100%);
+  margin: 0.3rem 0 1rem;
+  opacity: 0.5;
+}
+
+/* ═══ PAGE LOAD ANIMATION ═══ */
+.fade-up {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: riseUp 0.5s ease-out forwards;
+}
+
+.fade-up:nth-child(1) { animation-delay: 0.05s; }
+.fade-up:nth-child(2) { animation-delay: 0.12s; }
+.fade-up:nth-child(3) { animation-delay: 0.19s; }
+.fade-up:nth-child(4) { animation-delay: 0.26s; }
+
+@keyframes riseUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.steps-grid .step-card {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: riseUp 0.4s ease-out forwards;
+}
+.steps-grid .step-card:nth-child(1) { animation-delay: 0.1s; }
+.steps-grid .step-card:nth-child(2) { animation-delay: 0.18s; }
+.steps-grid .step-card:nth-child(3) { animation-delay: 0.26s; }
+.steps-grid .step-card:nth-child(4) { animation-delay: 0.34s; }
+</style>
+</head>
+<body>
+
+<!-- ═══ TOP NAV ═══ -->
+<nav class="top-nav">
+  <div class="nav-title"><span>D4</span>Wiki 管理后台</div>
+  <div class="nav-tabs">
+    <div class="nav-tab active">数据管线</div>
+    <div class="nav-tab disabled">用户管理</div>
+  </div>
+</nav>
+
+<!-- ═══ MAIN CONTENT ═══ -->
+<div class="main-content">
+
+  <!-- Action Bar -->
+  <div class="action-bar fade-up">
+    <div class="action-info">
+      <div class="action-info-row">
+        <span class="info-label">上次执行</span>
+        <span class="info-value" id="lastRun">—</span>
+      </div>
+      <div class="action-info-row">
+        <span class="info-label">本地版本</span>
+        <span class="info-value" id="localVersion">—</span>
+        <span class="version-tag unknown" id="updateStatus">未检查</span>
+      </div>
+    </div>
+    <div class="action-buttons">
+      <button class="btn btn-ghost btn-sm" id="btnCheckUpdate" onclick="checkUpdate()">检查更新</button>
+      <button class="btn btn-primary" id="btnRunAll" onclick="runAll()">一键执行全部</button>
+      <button class="btn btn-danger btn-sm" id="btnCancel" onclick="cancelRun()" disabled>取消</button>
+    </div>
+  </div>
+
+  <!-- Step Cards -->
+  <div class="steps-grid" id="stepsGrid">
+    <div class="step-card" data-step="download" data-status="pending">
+      <div class="step-header">
+        <div class="step-indicator"></div>
+        <div class="step-name">① 下载游戏数据</div>
+      </div>
+      <div class="step-meta">
+        <div class="step-meta-item">耗时: <span id="step-download-elapsed">—</span></div>
+        <div class="step-meta-item">执行: <span id="step-download-lastrun">—</span></div>
+      </div>
+      <button class="btn btn-sm btn-ghost" onclick="runStep('download')">单独执行</button>
+    </div>
+    <div class="step-card" data-step="parse" data-status="pending">
+      <div class="step-header">
+        <div class="step-indicator"></div>
+        <div class="step-name">② 二进制转JSON</div>
+      </div>
+      <div class="step-meta">
+        <div class="step-meta-item">耗时: <span id="step-parse-elapsed">—</span></div>
+        <div class="step-meta-item">执行: <span id="step-parse-lastrun">—</span></div>
+      </div>
+      <button class="btn btn-sm btn-ghost" onclick="runStep('parse')">单独执行</button>
+    </div>
+    <div class="step-card" data-step="classify" data-status="pending">
+      <div class="step-header">
+        <div class="step-indicator"></div>
+        <div class="step-name">③ 分类整理</div>
+      </div>
+      <div class="step-meta">
+        <div class="step-meta-item">耗时: <span id="step-classify-elapsed">—</span></div>
+        <div class="step-meta-item">执行: <span id="step-classify-lastrun">—</span></div>
+      </div>
+      <button class="btn btn-sm btn-ghost" onclick="runStep('classify')">单独执行</button>
+    </div>
+    <div class="step-card" data-step="copy" data-status="pending">
+      <div class="step-header">
+        <div class="step-indicator"></div>
+        <div class="step-name">④ 复制到翻译工具</div>
+      </div>
+      <div class="step-meta">
+        <div class="step-meta-item">耗时: <span id="step-copy-elapsed">—</span></div>
+        <div class="step-meta-item">执行: <span id="step-copy-lastrun">—</span></div>
+      </div>
+      <button class="btn btn-sm btn-ghost" onclick="runStep('copy')">单独执行</button>
+    </div>
+  </div>
+
+  <!-- Terminal -->
+  <div class="terminal-section fade-up">
+    <div class="section-header">
+      <div class="section-title">执行日志</div>
+      <button class="btn btn-ghost btn-sm" onclick="clearTerminal()">清空</button>
+    </div>
+    <div class="terminal" id="terminal">
+      <div class="terminal-empty" id="terminalEmpty">等待执行…</div>
+    </div>
+  </div>
+
+  <!-- Data Stats -->
+  <div class="fade-up">
+    <div class="section-header">
+      <div class="section-title">数据统计</div>
+      <button class="btn btn-ghost btn-sm" onclick="loadDataStats()">刷新</button>
+    </div>
+    <div class="rune-divider"></div>
+    <div class="stats-table-wrap">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>文件名</th>
+            <th style="text-align:right">条数</th>
+            <th style="text-align:right">大小</th>
+            <th style="text-align:right">最后更新</th>
+          </tr>
+        </thead>
+        <tbody id="statsBody">
+          <tr><td colspan="4" style="text-align:center;color:var(--text-dim);padding:2rem">加载中…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- Toast Container -->
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+const API = '/admin/api';
+let eventSource = null;
+let isRunning = false;
+let sseReconnectTimer = null;
+
+// ═══ INIT ═══
+document.addEventListener('DOMContentLoaded', () => {
+  loadStatus();
+  loadDataStats();
+  connectSSE(); // 页面加载时就建立 SSE 持久连接
+});
+
+// ═══ API HELPERS ═══
+async function apiGet(path) {
+  const res = await fetch(`${API}${path}`);
+  return res.json();
+}
+
+async function apiPost(path) {
+  const res = await fetch(`${API}${path}`, { method: 'POST' });
+  return res.json();
+}
+
+// ═══ STATUS ═══
+async function loadStatus() {
+  try {
+    const data = await apiGet('/status');
+    document.getElementById('lastRun').textContent = data.last_run || '—';
+    document.getElementById('localVersion').textContent = data.build_version || '未知';
+
+    // 始终从服务器同步运行状态，防止 isRunning 卡死
+    setRunningState(data.running);
+
+    data.steps.forEach(step => {
+      const card = document.querySelector(`.step-card[data-step="${step.id}"]`);
+      if (card) {
+        card.dataset.status = step.status || 'pending';
+        document.getElementById(`step-${step.id}-elapsed`).textContent = step.elapsed || '—';
+        document.getElementById(`step-${step.id}-lastrun`).textContent = step.last_run ? step.last_run.slice(5) : '—';
+      }
+    });
+  } catch (e) {
+    showToast('无法连接服务器', 'error');
+  }
+}
+
+// ═══ CHECK UPDATE ═══
+async function checkUpdate() {
+  const btn = document.getElementById('btnCheckUpdate');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span>检查中';
+
+  try {
+    const data = await apiGet('/check-update');
+    const tag = document.getElementById('updateStatus');
+
+    if (data.has_update) {
+      tag.className = 'version-tag has-update';
+      tag.textContent = `⚠ ${data.message}`;
+    } else if (data.server_version) {
+      tag.className = 'version-tag up-to-date';
+      tag.textContent = `✓ ${data.message}`;
+    } else {
+      tag.className = 'version-tag unknown';
+      tag.textContent = data.message;
+    }
+  } catch (e) {
+    showToast('检查更新失败', 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '检查更新';
+  }
+}
+
+// ═══ RUN ═══
+async function runAll() {
+  if (isRunning) return;
+  setRunningState(true); // 立即显示运行状态
+  // Reset all cards to pending
+  document.querySelectorAll('.step-card').forEach(c => c.dataset.status = 'pending');
+
+  try {
+    const data = await apiPost('/run');
+    if (data.error) {
+      showToast(data.error, 'error');
+      setRunningState(false);
+      return;
+    }
+  } catch (e) {
+    showToast('启动失败', 'error');
+    setRunningState(false);
+  }
+}
+
+async function runStep(stepId) {
+  if (isRunning) return;
+  setRunningState(true); // 立即显示运行状态
+  const card = document.querySelector(`.step-card[data-step="${stepId}"]`);
+  if (card) card.dataset.status = 'pending';
+
+  try {
+    const data = await apiPost(`/run/${stepId}`);
+    if (data.error) {
+      showToast(data.error, 'error');
+      setRunningState(false);
+      return;
+    }
+  } catch (e) {
+    showToast('启动失败', 'error');
+    setRunningState(false);
+  }
+}
+
+async function cancelRun() {
+  try {
+    await apiPost('/cancel');
+    showToast('已发送取消请求', 'success');
+  } catch (e) {
+    showToast('取消失败', 'error');
+  }
+}
+
+// ═══ SSE（持久连接，页面加载时建立，断线自动重连）═══
+function connectSSE() {
+  if (sseReconnectTimer) {
+    clearTimeout(sseReconnectTimer);
+    sseReconnectTimer = null;
+  }
+  if (eventSource) {
+    eventSource.close();
+  }
+
+  eventSource = new EventSource(`${API}/logs`);
+
+  eventSource.addEventListener('log', (e) => {
+    const data = JSON.parse(e.data);
+    appendLog(data);
+  });
+
+  eventSource.addEventListener('step_status', (e) => {
+    const data = JSON.parse(e.data);
+    const card = document.querySelector(`.step-card[data-step="${data.step}"]`);
+    if (card) {
+      card.dataset.status = data.status;
+      if (data.elapsed) {
+        document.getElementById(`step-${data.step}-elapsed`).textContent = data.elapsed;
+      }
+    }
+  });
+
+  eventSource.addEventListener('done', (e) => {
+    const data = JSON.parse(e.data);
+    setRunningState(false);
+    // 不关闭 SSE — 保持持久连接，下次运行时直接收日志
+    if (data.success) {
+      showToast(`执行完成，总耗时 ${data.total_elapsed}`, 'success');
+    } else {
+      showToast('执行中断', 'error');
+    }
+    // 刷新状态和数据统计
+    loadStatus();
+    loadDataStats();
+  });
+
+  eventSource.onerror = () => {
+    // SSE 断线 — 关闭旧连接，2 秒后重连
+    if (eventSource) {
+      eventSource.close();
+      eventSource = null;
+    }
+    sseReconnectTimer = setTimeout(() => {
+      connectSSE();
+      loadStatus(); // 重连时同步服务器状态
+    }, 2000);
+  };
+}
+
+// ═══ TERMINAL ═══
+const STEP_LABELS = {
+  download: '下载',
+  parse: '转换',
+  classify: '整理',
+  copy: '复制',
+};
+
+function appendLog(data) {
+  const terminal = document.getElementById('terminal');
+  const empty = document.getElementById('terminalEmpty');
+  if (empty) empty.remove();
+
+  const line = document.createElement('div');
+  line.className = 'log-line';
+
+  const time = document.createElement('span');
+  time.className = 'log-time';
+  time.textContent = data.time;
+
+  const tag = document.createElement('span');
+  tag.className = 'log-step-tag';
+  tag.textContent = STEP_LABELS[data.step] || data.step;
+
+  const text = document.createElement('span');
+  text.className = `log-text ${data.type}`;
+  text.textContent = data.text;
+
+  line.appendChild(time);
+  line.appendChild(tag);
+  line.appendChild(text);
+  terminal.appendChild(line);
+
+  // Auto-scroll
+  terminal.scrollTop = terminal.scrollHeight;
+}
+
+function clearTerminal() {
+  const terminal = document.getElementById('terminal');
+  terminal.innerHTML = '<div class="terminal-empty" id="terminalEmpty">等待执行…</div>';
+}
+
+// ═══ DATA STATS ═══
+async function loadDataStats() {
+  try {
+    const data = await apiGet('/data-stats');
+    const tbody = document.getElementById('statsBody');
+
+    if (!data.files || data.files.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:var(--text-dim);padding:2rem">暂无数据</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = data.files.map(f => `
+      <tr>
+        <td class="filename">${f.name}</td>
+        <td class="number">${f.count !== null ? f.count.toLocaleString() : '—'}</td>
+        <td class="number">${f.size_display}</td>
+        <td class="number">${f.modified}</td>
+      </tr>
+    `).join('');
+  } catch (e) {
+    document.getElementById('statsBody').innerHTML =
+      '<tr><td colspan="4" style="text-align:center;color:var(--terminal-stderr);padding:2rem">加载失败</td></tr>';
+  }
+}
+
+// ═══ UI STATE ═══
+function setRunningState(running) {
+  isRunning = running;
+  document.getElementById('btnRunAll').disabled = running;
+  document.getElementById('btnCancel').disabled = !running;
+  // Disable individual step buttons during run
+  document.querySelectorAll('.step-card .btn').forEach(btn => btn.disabled = running);
+}
+
+// ═══ TOAST ═══
+function showToast(message, type = '') {
+  const container = document.getElementById('toastContainer');
+  const toast = document.createElement('div');
+  toast.className = `toast ${type}`;
+  toast.textContent = message;
+  container.appendChild(toast);
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateX(30px)';
+    toast.style.transition = 'all 0.3s';
+    setTimeout(() => toast.remove(), 300);
+  }, 3500);
+}
+</script>
+</body>
+</html>

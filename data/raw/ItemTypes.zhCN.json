@@ -1,0 +1,1758 @@
+[
+  {
+    "Name": "普通护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "魔法护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "稀有护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "传奇护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "暗金护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "神话暗金护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "先祖普通护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "先祖魔法护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "先祖稀有护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "先祖传奇护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "先祖暗金护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "先祖神话暗金护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "混沌暗金护符",
+    "Type": "amulet"
+  },
+  {
+    "Name": "普通斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金双手斧",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金双手斧(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "魔法靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "稀有靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "传奇靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "暗金靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "神话暗金靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "先祖普通靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "先祖魔法靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "先祖稀有靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "先祖传奇靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "先祖暗金靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "先祖神话暗金靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "混沌暗金靴子",
+    "Type": "boots"
+  },
+  {
+    "Name": "普通弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "魔法弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "稀有弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "传奇弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "暗金弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "神话暗金弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖普通弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖魔法弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖稀有弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖传奇弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖暗金弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖神话暗金弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "混沌暗金弓",
+    "Type": "ranged"
+  },
+  {
+    "Name": "普通胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "魔法胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "稀有胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "传奇胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "暗金胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "神话暗金胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "先祖普通胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "先祖魔法胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "先祖稀有胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "先祖传奇胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "先祖暗金胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "先祖神话暗金胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "混沌暗金胸甲",
+    "Type": "chest"
+  },
+  {
+    "Name": "普通弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "魔法弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "稀有弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "传奇弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "暗金弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "神话暗金弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖普通弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖魔法弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖稀有弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖传奇弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖暗金弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "先祖神话暗金弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "混沌暗金弩",
+    "Type": "ranged"
+  },
+  {
+    "Name": "普通匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金匕首",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "魔法聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "稀有聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "传奇聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "暗金聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "神话暗金聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖普通聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖魔法聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖稀有聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖传奇聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖暗金聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖神话暗金聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "混沌暗金聚能器",
+    "Type": "offhand"
+  },
+  {
+    "Name": "普通剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金剑刃戟",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "魔法手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "稀有手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "传奇手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "暗金手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "神话暗金手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "先祖普通手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "先祖魔法手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "先祖稀有手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "先祖传奇手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "先祖暗金手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "先祖神话暗金手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "混沌暗金手套",
+    "Type": "gloves"
+  },
+  {
+    "Name": "普通头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "魔法头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "稀有头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "传奇头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "暗金头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "神话暗金头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "先祖普通头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "先祖魔法头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "先祖稀有头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "先祖传奇头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "先祖暗金头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "先祖神话暗金头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "混沌暗金头盔",
+    "Type": "helm"
+  },
+  {
+    "Name": "普通裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "魔法裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "稀有裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "传奇裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "暗金裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "神话暗金裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "先祖普通裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "先祖魔法裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "先祖稀有裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "先祖传奇裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "先祖暗金裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "先祖神话暗金裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "混沌暗金裤子",
+    "Type": "pants"
+  },
+  {
+    "Name": "普通钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金双手钉锤",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金双手锤(钝击)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "魔法图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "稀有图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "传奇图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "暗金图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "神话暗金图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖普通图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖魔法图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖稀有图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖传奇图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖暗金图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖神话暗金图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "混沌暗金图腾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "普通长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金长柄武器",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金长柄武器(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金长杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "魔法戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "稀有戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "传奇戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "暗金戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "神话暗金戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "先祖普通戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "先祖魔法戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "先祖稀有戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "先祖传奇戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "先祖暗金戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "先祖神话暗金戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "混沌暗金戒指",
+    "Type": "ring"
+  },
+  {
+    "Name": "普通镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金双手镰刀",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "魔法盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "稀有盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "传奇盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "暗金盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "神话暗金盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖普通盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖魔法盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖稀有盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖传奇盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖暗金盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "先祖神话暗金盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "混沌暗金盾",
+    "Type": "offhand"
+  },
+  {
+    "Name": "普通杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金双手剑",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金双手剑(劈砍)",
+    "Type": "weapon"
+  },
+  {
+    "Name": "普通魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "魔法魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "稀有魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "传奇魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "暗金魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "神话暗金魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖普通魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖魔法魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖稀有魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖传奇魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖暗金魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "先祖神话暗金魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "混沌暗金魔杖",
+    "Type": "weapon"
+  },
+  {
+    "Name": "梦魇符印",
+    "Type": "sigil"
+  },
+  {
+    "Name": "魔法 仪祭符文",
+    "Type": "rune"
+  },
+  {
+    "Name": "稀有 仪祭符文",
+    "Type": "rune"
+  },
+  {
+    "Name": "传奇 仪祭符文",
+    "Type": "rune"
+  },
+  {
+    "Name": "魔法 祈告符文",
+    "Type": "rune"
+  },
+  {
+    "Name": "稀有 祈告符文",
+    "Type": "rune"
+  },
+  {
+    "Name": "传奇 祈告符文",
+    "Type": "rune"
+  },
+  {
+    "Name": "密语之木",
+    "Type": "witchersigil"
+  },
+  {
+    "Name": "升级符印",
+    "Type": "dungeonescalation"
+  },
+  {
+    "Name": "暗金 赫拉迪姆珠宝",
+    "Type": "horadricjewel"
+  }
+]
