@@ -65,6 +65,9 @@ Desktop.ini
 # Project-specific scratch files
 dataaw
 
-# Keep tracked project data:
-# - data/raw/*.json
-# - docs/screenshots/*
+# Blizzard game data — copyright belongs to Blizzard Entertainment
+# Run the data pipeline (see README) to generate these locally
+data/raw/*.json
+
+# Local execution history (contains machine-specific paths)
+data/pipeline_history.json
